@@ -20,15 +20,15 @@ jobs:
         with:
           node-version: 18
           cache: npm
-    - name: "Version and publish" # Interesting step
-      env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        if [ ${{ github.base_ref }} = development ]; then
-          npx lerna version prepatch --no-changelog --yes
-        else
-          npx lerna version prepatch --conventional-graduate --no-changelog --yes
-        fi
+      - name: "Version and publish"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ${{ github.base_ref }} = development ]; then
+            npx lerna version prepatch --no-changelog --yes
+          else
+            npx lerna version prepatch --conventional-graduate --no-changelog --yes
+          fi
 
-        npx lerna publish from-git --yes
+          npx lerna publish from-git --yes
