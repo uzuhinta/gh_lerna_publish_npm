@@ -11,6 +11,10 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "lib"
   ],
@@ -19,5 +23,6 @@
   },
   "dependencies": {
     "@thinhnguyen/sum": "^0.0.4-alpha.0"
-  }
+  },
+  "gitHead": "4ce541e0ce8cd974dfc73dcd82db3f31986af916"
 }

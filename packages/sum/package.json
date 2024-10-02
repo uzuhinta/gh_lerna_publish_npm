@@ -11,10 +11,15 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "lib"
   ],
   "scripts": {
     "test": "node ./__tests__/sum.test.js"
-  }
+  },
+  "gitHead": "4ce541e0ce8cd974dfc73dcd82db3f31986af916"
 }
