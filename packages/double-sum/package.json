@@ -1,6 +1,6 @@
 {
   "name": "@thinhnguyen_zsy/double-sum",
-  "version": "0.0.6-alpha.0",
+  "version": "0.0.7-alpha.0",
   "description": "> TODO: description",
   "author": "Quan Nguyen Ba <quan.nguyenba@pionero.com>",
   "homepage": "",
@@ -22,7 +22,7 @@
     "test": "node ./__tests__/double-sum.test.js"
   },
   "dependencies": {
-    "@thinhnguyen_zsy/sum": "^0.0.6-alpha.0"
+    "@thinhnguyen_zsy/sum": "^0.0.7-alpha.0"
   },
   "gitHead": "cc98d20ead21e6d2305acee701097ff7a97050ca"
 }
