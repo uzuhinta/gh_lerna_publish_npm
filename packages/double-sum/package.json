@@ -1,0 +1,19 @@
+{
+  "name": "@thinhnguyen/double-sum",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Quan Nguyen Ba <quan.nguyenba@pionero.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/double-sum.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/double-sum.test.js"
+  }
+}
