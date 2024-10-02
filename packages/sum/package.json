@@ -1,5 +1,5 @@
 {
-  "name": "@thinhnguyen/sum",
+  "name": "@thinhnguyen_zsy/sum",
   "version": "0.0.4-alpha.0",
   "description": "> TODO: description",
   "author": "Quan Nguyen Ba <quan.nguyenba@pionero.com>",
@@ -21,5 +21,5 @@
   "scripts": {
     "test": "node ./__tests__/sum.test.js"
   },
-  "gitHead": "4ce541e0ce8cd974dfc73dcd82db3f31986af916"
+  "gitHead": "cc98d20ead21e6d2305acee701097ff7a97050ca"
 }

@@ -1,5 +1,5 @@
 "use strict";
-const sum = require("@thinhnguyen/sum");
+const sum = require("@thinhnguyen_zsy/sum");
 
 module.exports = doubleSum;
 
