@@ -5,6 +5,7 @@
   "author": "Quan Nguyen Ba <quan.nguyenba@pionero.com>",
   "homepage": "",
   "license": "ISC",
+  "private": false,
   "main": "lib/sum.js",
   "directories": {
     "lib": "lib",

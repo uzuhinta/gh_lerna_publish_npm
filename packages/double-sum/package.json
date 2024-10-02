@@ -4,6 +4,7 @@
   "description": "> TODO: description",
   "author": "Quan Nguyen Ba <quan.nguyenba@pionero.com>",
   "homepage": "",
+  "private": false,
   "license": "ISC",
   "main": "lib/double-sum.js",
   "directories": {
