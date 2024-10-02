@@ -1,0 +1,40 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+      - name: "Version and publish"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "${NPM_TOKEN}"
+          echo "${GITHUB_TOKEN}"
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+          if [[ "${{ github.base_ref }}" == "development" ]]; then
+            npx lerna version prepatch --no-changelog --yes
+          else
+            npx lerna version prepatch --conventional-graduate --no-changelog --yes
+          fi
+
+          npx lerna publish from-git --yes
